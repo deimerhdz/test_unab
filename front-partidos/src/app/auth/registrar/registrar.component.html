@@ -1,0 +1,17 @@
+
+
+<section class="contenedor-login fondo">
+    <form class="form" [formGroup]="registrarForm" (ngSubmit)="crearUsuario()" autocomplete="off">
+        <h2>Registrarse</h2>
+        <label for="Nombre">Nombre:</label><br>
+        <input type="text" id="Nombre" formControlName="nombre" placeholder="Pedro Martinez" ><br>
+        <label for="correo">Correo:</label><br>
+        <input type="email" id="correo" formControlName="correo" placeholder="Pedro@correo.com"><br>
+        <label for="Usuario">Usuario:</label><br>
+        <input type="text" id="usuario" formControlName="username" placeholder="Pedro123"><br>
+        <label for="password" >Contraseña:</label><br>
+        <input type="password" id="password" formControlName="password" placeholder="******"><br>
+        <button type="submit">Registrar</button><br>
+        <a routerLink="../">Ya tengo una cuenta</a>
+    </form>
+</section>

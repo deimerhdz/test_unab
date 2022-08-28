@@ -1,0 +1,81 @@
+
+.contenedor{
+    width: 50%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.campo{
+    margin: 5px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background: transparent;
+ 
+}
+
+input{
+    width: 400px;
+    padding: 10px;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid #ccc;
+}
+
+select{
+    width: 400px;
+    padding: 10px;
+    outline: none;
+    color: rgb(20, 173, 0);
+    font-size: 20px;
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid #ccc; 
+}
+
+
+
+.header{
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.header h1{
+    font-size: 48px;
+}
+.header p{
+    font-style: italic;
+}
+button{
+    margin: 40px;
+    padding: 10px;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid #ccc;
+
+}
+button:hover{
+    transform:scale(1.1);
+    background-color: green;
+    color: white;
+   
+    transition: all ease-in .300s;
+}
+.options{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}

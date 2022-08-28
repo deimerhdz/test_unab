@@ -1,0 +1,31 @@
+<div class="contenedor">
+    <a routerLink="/opciones" class="btn back">Regresar</a>
+    <div class="header">
+        <h1>Agregar partido</h1>
+        <p>LLene todos los campos para registrar partido.</p>
+    </div>
+
+    <form class="options" [formGroup]="PartidoForm" (ngSubmit)="agregarPartido()" autocomplete="off">
+        <div class="campo">
+            <label class="titulo"  >Fecha:</label><br>
+            <input type="text"  formControlName="fecha" placeholder="2021-05-08T00:00:00.000Z" required><br>
+        </div>
+
+        <div class="campo">
+            <label class="titulo"  >Equipo visitante:</label><br>
+            <select formControlName="visitante">
+                <option *ngFor="let equipo of equipos" [value]="equipo.id">{{equipo.nombre}}
+              </select>
+        </div>
+        <div class="campo">
+            <label class="titulo"  >Equipo local:</label><br>
+            <select formControlName="local">
+                <option *ngFor="let equipo of equipos" [value]="equipo.id">{{equipo.nombre}}
+              </select>
+        </div>
+
+        <div class="campo">
+            <button>Agregar</button>
+        </div>
+        
+    </form>

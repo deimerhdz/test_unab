@@ -1,0 +1,14 @@
+
+<section class="contenedor-login fondo">
+    <form class="form"
+     [formGroup]="loginForm"
+    (ngSubmit)="login()" autocomplete="off"><h2>Iniciar sesión</h2>
+        <label for="Usuario">Usuario:</label><br>
+        <input type="text" id="usuario" name="username" formControlName="username" placeholder="Pre23"><br>
+        <label for="password" >Contraseña:</label><br>
+        <input type="password" id="password" name="password" formControlName="password" placeholder="******"><br>
+        <button type="submit">Entrar</button><br>
+        <a routerLink="/registro" href="">Registrarse</a>
+    </form>
+</section>
+

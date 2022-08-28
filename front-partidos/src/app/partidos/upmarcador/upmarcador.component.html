@@ -1,0 +1,45 @@
+<div class="contenedor">
+    <a routerLink="/lista" class="btn back pa">Regresar</a>
+    <div class="header">
+        <h1>Actualizar partido</h1>
+        <p>Ingrese los goles de cada equipo.</p>
+    </div>
+
+    <form class="options" [formGroup]="actualizarForm"
+    (ngSubmit)="actualizar()" autocomplete="off"> 
+        <div class="campo">
+            <label class="titulo"  >Fecha:</label><br>
+            <input type="datetime" id="fecha" formControlName="fecha" ><br>
+        </div>
+
+        <div class="campo">
+            <label class="titulo" for="visitante" >Equipo visitante:</label><br>
+            <input type="hidden" id="visitante" formControlName="visitante"  ><br>
+            <input type="text" id="visitante" [value]="visitante?.nombre"  ><br>
+        </div>
+
+        <div class="campo">
+            <label class="titulo" for="local" >Equipo local:</label><br>
+            <input type="hidden" id="local" formControlName="local"><br>
+            <input type="text" id="local" [value]="local?.nombre" ><br>
+        </div>
+
+        <div class="campo">
+            <label class="titulo" for="gvisitante" >Goles visitante:</label><br>
+            <input type="number"  formControlName="goles_visitante"  ><br>
+        </div>
+
+        <div class="campo">
+            <label class="titulo" for="glocal" >Goles local:</label><br>
+            <input type="number" id="glocal" formControlName="goles_local"  ><br>
+        </div>
+
+        
+        
+
+        <div class="campo">
+            <button>Actualizar</button>
+        </div>
+        
+    </form>
+

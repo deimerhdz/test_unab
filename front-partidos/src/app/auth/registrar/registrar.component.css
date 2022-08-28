@@ -1,0 +1,53 @@
+
+.contenedor-login{
+    width: 100%;
+    height: 100vh;
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.fondo{
+    background-image: url(../../../assets/img/fondo.jpg);
+padding: 0.1px;
+}
+
+button {
+    background-color: #1D9B01;
+    color: white;
+    padding: 10px 16px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+}
+
+.fondo form{
+    padding: 0.1px;
+    background: #000;
+    color: white;
+    width: 300px;
+    height: 400px;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: calc(50vh - 190px);
+    border-radius: 20px;
+    opacity: 80%;
+}
+
+.form>h2{
+color: #1D9B01;
+margin-top: 50px;
+}
+
+input {
+    height: 30px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+a{
+    color: #fff;
+}
